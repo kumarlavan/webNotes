@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./HtmlNotes.css"> -->
+  <link rel="stylesheet" href="notes.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    li,
+    p {
+      font-size: 20px;
+    }
+  
+    hr {
+      color: black;
+      background-color: black;
+      height: 1px;
+    }
+    
+  </style>
+    <script defer src="./notes.js"></script>
+</head>
+
+
+<body>
+
+
+<div class="main">
+
+
+  
+  <div class="top_heading" >
+    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="OpenMenu"><i class="fa-solid fa-bars"></i></button>
+    <h1 style="font-size: 2.3rem; font-weight: 600;">Html Notes.</h1>
+    <div class="theme">
+      <!-- <button id="dark"><i class="fa-solid fa-moon"></i></button>
+      <button id="light"><i class="fa-solid fa-sun"></i></button> -->
+      <div id="themeSwitch">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasWithBothOptionsLabel" id="">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Topics.</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body sidebarList">
+      <!-- <p>
+      <a href="#html_basic">Introduction.</a>
+      <a href="#html_tags">Html tags.</a>
+      <a href="">Formatting tags.</a>
+      <a href="">Lists.</a>
+      <a href="">Html tables.</a>
+      <a href="">Anchor tag.</a>
+      <a href="">Media tags</a>
+      <a href="">Html forms.</a>
+      <a href="">Semantic tags.</a>
+      <a href="">Non-semantic tags.</a>
+      <a href="">All html tags Summary.</a>
+    </p> -->
+    
+    <!-- <div class="col-4">
+      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+        <nav class="nav nav-pills flex-column">
+          <a href="#html_basic">Introduction.</a>
+          <a href="#html_tags">Html tags.</a>
+          <a href="#formatting_tags">Formatting tags.</a>
+          <a href="#html_lists">Lists.</a>
+          <a href="#html_tables">Html tables.</a>
+          <a href="">Anchor tag.</a>
+          <a href="">Media tags</a>
+          <a href="">Html forms.</a>
+          <a href="">Semantic tags.</a>
+          <a href="">Non-semantic tags.</a>
+          <a href="">All html tags Summary.</a>
+        </nav>
+      </nav>
+    </div> -->
+    
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#html_basic">Introduction.</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question1a">What is world wide web?</a>
+        <a class="nav-link ms-3 my-1" href="#question1b">What is internet?</a>
+        <a class="nav-link ms-3 my-1" href="#question1c">What is web browser?</a>
+        <a class="nav-link ms-3 my-1" href="#question1d">What is web server?</a>
+        <a class="nav-link ms-3 my-1" href="#question1e">What is website?</a>
+        <a class="nav-link ms-3 my-1" href="#question1f">How to access website?</a>
+        <a class="nav-link ms-3 my-1" href="#question1g">Types Of website.</a>
+        <a class="nav-link ms-3 my-1" href="#question1h">Difference between static and dynamic website?</a>
+      </nav>
+      <a  class="list-group-item list-group-item-action" href="#html_tags">Html tags.</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question2a">What is html tag?</a>
+        <a class="nav-link ms-3 my-1" href="#question2b">What is an html element?</a>
+        <a class="nav-link ms-3 my-1" href="#question2c">What is head tag?</a>
+        <a class="nav-link ms-3 my-1" href="#question2d">What is body tag?</a>
+        <a class="nav-link ms-3 my-1" href="#question2e">HTML headings.</a>
+        <a class="nav-link ms-3 my-1" href="#question2f">Horizontal line</a>
+        <a class="nav-link ms-3 my-1" href="#question2g">Thematic line</a>
+        <a class="nav-link ms-3 my-1" href="#question2h">Thematic Break</a>
+        <a class="nav-link ms-3 my-1" href="#question2i">HTML line break</a>
+        <a class="nav-link ms-3 my-1" href="#question2j">HTML entities</a>
+      </nav>
+      <a  class="list-group-item list-group-item-action" href="#formatting_tags">Formatting tags.</a>
+      <a  class="list-group-item list-group-item-action" href="#html_lists">Lists.</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question4a">Ordered list.</a>
+        <a class="nav-link ms-3 my-1" href="#question4b">Unordered list.</a>
+        <a class="nav-link ms-3 my-1" href="#question4c">Description list.</a>
+        <a class="nav-link ms-3 my-1" href="#question4d">Nested list.</a>
+      </nav>
+      <a  class="list-group-item list-group-item-action" href="#html_tables">Html tables.</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question5a">Attributes in col tag.</a>
+        
+      </nav>
+      <a  class="list-group-item list-group-item-action" href="#anchor_tag">Anchor tag.</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question6a">Attributes for a tag.</a>
+        <a class="nav-link ms-3 my-1" href="#question6b">href attribute.</a>
+        <a class="nav-link ms-3 my-1" href="#question6c">target attribute.</a>
+        <a class="nav-link ms-3 my-1" href="#question6d">download attribute.</a>
+      </nav>
+      <a  class="list-group-item list-group-item-action" href="#media_tag">Media tags</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question7a">Image.</a>
+        <a class="nav-link ms-3 my-1" href="#question7b">Audio.</a>
+        <a class="nav-link ms-3 my-1" href="#question7c">Video.</a>
+        <a class="nav-link ms-3 my-1" href="#question7d">Figure.</a>
+        <a class="nav-link ms-3 my-1" href="#question7e">Figure Caption.</a>
+        
+        <a class="nav-link ms-3 my-1" href="#question7f">Details.</a>
+        <a class="nav-link ms-3 my-1" href="#question7g">Summary.</a>
+
+      </nav>
+      <a  class="list-group-item list-group-item-action" href="#html_form">Html forms.</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#question8a">Input tags.</a>
+        <a class="nav-link ms-3 my-1" href="#question8b">Different input types.</a>        
+      </nav>
+      <a class="nav-link ms-3 my-1" href="#">HTML classification.</a>
+      <a  class="list-group-item list-group-item-action" href="#semantic_tags">Semantic tags.</a>
+      <a  class="list-group-item list-group-item-action" href="nonsemantic_tags">Non-semantic tags.</a>
+      <a  class="list-group-item list-group-item-action" href="#summary">All html tags Summary.</a>
+      </div>
+  </div>
+</div>
+
+
+
+<div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example text_box" tabindex="0">
+  
+  <div id="html_basic" class="introduction introduction-bs-spy="scroll" target ="navbar-example3">
+
+
+
+    <div id="question1a">
+      <h2>What is World Wide Web?</h2>
+      <p>
+      <ol type="i">
+        <li>world wide web commonly refered as www/w3/web. It is a system interconnected public web pages accessable
+          through internet.</li>
+          <li>If we want to create a web we need atleast 2 components i.e, client computer and a web server.</li>
+          <li>with the help of internet only we are able to connect to the server, without it won't possible.</li>
+        </ol>
+      </p>
+    </div>
+
+
+    <div id="question1b">
+
+      <h2 id="">What is Internet/Interconnected Network?</h2>
+      <p>
+        <ol type="i">
+          <li>The internet is a global network of interconnected computer networks that use a standardized set of
+            protocols(such
+            as TCP/IP) to facilitate the exchange of data and information.It is a vast infrastructure that connects millions
+            of
+            devices including computers, servers,routers and other network-enable devies across the world.
+          </li>
+          <li>The internet enables communication information sharing and access to various online sevices and resources. It
+            provides a platform for individuals,organizations and governments to connect,collabraye and exchange information
+            regardless of geographical boundaries.</li>
+            <li><b>TCP: </b>Transmission Control Protocol</li>
+            <li><b>IP: </b>Internet Protocol</li>
+          </ol>
+        </p>
+
+    </div>
+    
+      <div id="question1c">
+        <h2>What is Web Browser?</h2>
+        <p>
+          <ul type="none">
+            <li>Ans - A web browser is a software application that alllows users to access, view and intract with others on the
+              world wide
+              web.It serves as a user interface for navigating and display web page, websites and web-based applications and
+              also
+              it helps to render the HTML,CSS,Javascript etc
+            </li>
+          </ul>
+        </p>
+      </div>
+
+  <div id="question1d">
+    <h2>What is Web Server?</h2>
+  <p>
+    <ul type="none">
+      <li>Ans - A web server is a software and hardware that uses http and other protocols to respond to client request
+        made over
+        the www.</li>
+        <li><b>HTTP: </b>Hyper Text Transfer Protocol</li>
+        <li><b>URL: </b>Uniform Resource Locator</li>
+      </ul>
+    </p>
+  </div>
+    <div id="question1e">
+      <h2>What is Website?</h2>
+    <p>
+      <ol type="i">
+        <li>website is the collection of web pages different multimedia content such as text images and viedos which can be
+          accessed by the url,which you can see in the address bar of the browser.</li>
+          <p>for example: <b>https://www.google.com</b></p>
+        </ol>
+      </p>
+    </div>
+      <div id="question1f">
+        <h2>How to acess Websites?</h2>
+      <p>
+  <ul type="none">
+    <li>Ans - when we type a certain url in a browser search bar, the browser request the page from the webserver and
+      the web
+      server returns the requried web page and it content to the browser.Now it differs how the server returns the
+      requried information in the case of static and dynamic websites.
+    </li>
+  </ul>
+</p>
+      </div>
+      <div id="question1g">
+        <h2>Types Of Websites........</h2>
+<ol type="i">
+  <li><u>Static Websites: - </u><br>
+    web pages are returned by the server which are prebuilt source code files built using simple languages such as
+    html,css,js."There is no processing of the content on the server (according to the user) in static website.web
+    pages
+    are returned by the server with no change."therfore,static websites are fast,also they are less costly. <br>
+    Note: Static does not mean that it will not respond to user actions,these websites are called static because these
+    cannot be manipulated on the server.</li>
+    <li><u>Dynamic Websites: - </u><br>
+      web pages are returned by the server which are processed during runtime means they are not prebuilt web pages
+      but they are build during runtime according to the user's demand with the help of server-side scripting languages
+      such as php,nodejs,asp.net and many more supported by the server. so they are slower than static websites but
+      updates and intaction with database are possible.
+      Dynamic websites are used over static websites are updates can be done very easily as compared to static
+      website(Where altring in every page is requried) but in dynamic websites it is possible to do common changes once
+      and it will reflect in all the web pages</li>
+    </ol>
+      </div>
+    <div id="question1h">
+      <h2>Difference betweeen Static website and Dynamic website?</h2>
+    <hr>
+    <table border="1" align="center">
+      <tr>
+        <td>Static Website</td>
+        <td>Dynamic Website</td>
+      </tr>
+      <tr>
+        <td>1.content of web pages can't be change at
+          runtime</td>
+          <td>1.content of web pages can be changed.</td>
+        </tr>
+        <tr>
+          <td>2.It is faster to load as compared to dynamic
+            website</td>
+            <td>2.It is slower than static website.</td>
+          </tr>
+          <tr>
+            <td>3.cheaper development costs</td>
+            <td>3.More development costs.</td>
+          </tr>
+          <tr>
+            <td>4.html,css,js is used for developing the
+              websites</td>
+              <td>4.server side languages such as PHP,Nodejs etc
+                are used.</td>
+              </tr>
+              <tr>
+                <td>5.same content is delevered everytime the
+                  page is loaded</td>
+                  <td>5.content may changes everytime the page is
+                    loaded.</td>
+                  </tr>
+                </table>
+              </div>
+    </div>
+              
+              
+  <div id="html_tags">
+                
+    <div id="question2a">
+      <h2 id="">What is HTML tag?</h2>
+  <ol type="i">
+    <li>HTML tags are the predefined keywords on a web page that define how your web browser must formate and display
+      your web page.</li>
+      <li>Almost all tags contains two parts.</li>
+      <ul type="disc">
+        <li>Opening tag (&lt)</li>
+        <li>Closing tag (&gt)</li>
+      </ul>
+      <li type="none">Example: - &lthtml&gt &lt/html&gt</li>
+    </ol>
+    </div>
+    <div id="question2b">
+      <h2>What is an HTML element?</h2>
+    <ol type="i">
+      <li>The HTML element is everything from the start tag to the end tag</li>
+      <li type="none">Example: - &lttagname&gt content goes here .....&lt/tagname&gt</li>
+    </ol>
+    </div>
+    <div id="question2c">
+      <h2>What is head tag?</h2>
+    <ol type="i">
+      <li>The head element is a container for metadata.(metadat is data about the html document).the head element contains
+        machine readable information about the document like style sheet ,title, script other metadata.</li>
+        <li type="none"><b>Note: </b>Head tag primarily holds information for machine processing, not for the human
+          readability</li>
+        </ol>
+    </div>
+        <p></p>
+        <div id="question2d">
+          <h2>What is body tag?</h2>
+        <ol type="i">
+          <li>The body tag defines the document's body. the body element contains all the content of an html document, such as
+            headings,tables,lists etc.</li>
+            <li type="none"><b>Note: </b>only one body tag should be in a single html document.</li>
+          </ol>
+        </div>
+          <div id="2e">
+            <h2>HTML Headings</h2>
+          <ol type="i">
+            <li>HTML headings are defined with the <b>&lth1&gt</b> to <b>&lt/h6&gt</b> tags.</li>
+            <li><b>&lth1&gt</b> defines the most important heading. <b>&lth6&gt</b> defines the least important heading</li>
+          </ol>
+          </div>
+          <div id="question2f">
+            <h2>Horiontal Line: - </h2>
+          <ol type="i">
+            <li>The <strong>&lthr&gt</strong> tag in HTML stands for "<strong><mark>horizontal rule</mark>
+            </strong>". It is a self-closing tag.</li>
+            <li>That is used to create a thematic break or horizontal line in a webpage.</li>
+            <li>The &lthr&gt tag is primarily used to separate content or sections within a document, providing visual clarity
+              and
+              structure to the page.</li>
+              <li>The &lthr&gt element is used to separate content (or define a change) in an HTML page.</li>
+            </ol>
+          </div>
+      <div id="question2h">
+        <h2>Thematic Break: -</h2>
+        <ol type="i">
+          <li>It is often used to denote a thematic break between different sections of content within a webpage. For example,
+            you might use &lthr&gt to separate different topics in an article, distinguish sections of a form, or divide
+            content within a blog post.</li>
+            <li>The &lthr&gt tag is an empty tag, which means that it has no end tag.</li>
+          </ol>
+      </div>
+    <div id="question2i">
+      <h2>HTML Line Breaks: -</h2>
+    <ol type="i">
+      <li>The HTML &ltbr&gt element defines a line break.</li>
+      <li>Use &ltbr&gt if you want a line break (a new line) without starting a new paragraph</li>
+      <li>The &ltbr&gt tag is an empty tag, which means that it has no end tag</li>
+      <p><strong>&ltp&gt</strong>Defines a paragraph</p>
+      <p><strong>&lthr&gt</strong>Defines a horizontal rule in the content</p>
+      <p><strong>&ltbr&gt</strong>Inserts a single line break</p>
+      <p><strong>&ltpre&gt</strong>Defines pre-formatted text</p>
+    </ol>
+    </div>
+    <div id="question2j">
+      <h2><mark>HTML Entities: -</mark></h2>
+    <ul type="none">
+      <li>Reserved characters in HTML must be replaced with entities:</li>
+      <li>&lt (less than) = & lt</li>
+      <li>&gt (greather than) = & gt</li>
+    </ul>
+    </div>
+    
+  </div>
+  
+  <div id="formatting_tags">
+    <h2 id="">Formatting tags in HTML: -</h2>
+    <ol type="i">
+      <li><strong>&ltb&gt</strong> - Bold text</li>
+      <li><strong>&ltstrong&gt</strong> - Important text</li>
+      <li><strong>&lti&gt</strong> - Italic text</li>
+      <li><strong>&ltem&gt</strong> - Emphasized text</li>
+      <li><strong>&ltmark&gt</strong> - Marked text</li>
+      <li><strong>&ltdel&gt</strong> - Deleted text</li>
+      <li><strong>&ltsub&gt</strong> - Subscript text</li>
+      <li><strong>&ltsup&gt</strong> - Superscript text</li>
+      <li><strong>&ltabbr&gt</strong> - abbreviation text</li>
+      <li><strong>&ltu&gt</strong> - Underline the text</li>
+    </ol>
+  </div>
+  
+  
+  <div id="html_lists">
+    
+  <h2 id="">Types of List in HTML</h2>
+
+  <div id="question4a">
+    <h3><mark> 1.Ordered List:</mark></h3>
+  <ol type="i">
+    <li>The HTML &ltol&gt tag defines an ordered list. An ordered list can be numerical or alphabetical.</li>
+    <li>An ordered list starts with the &ltol&gt tag. Each list item starts with the &ltli&gt tag.</li>
+    <li>The list items will be marked with numbers by default.</li>
+    <li>The type attribute of the &ltol&gt tag, defines the type of the list item marker</li>
+  </ol>
+  <table border="1px" align="center">
+    <tr>
+      <td>type="1"</td>
+      <td>The list items will be numbered with numbers(default)</td>
+    </tr>
+    <tr>
+      <td>type="A" </td>
+      <td>The list items will be numbered with uppercase letters</td>
+    </tr>
+    <tr>
+      <td>type="a"</td>
+      <td>The list items will be numbered with lowercase letters</td>
+    </tr>
+    <tr>
+      <td>type="I"</td>
+      <td>The list items will be numbered with uppercase roman number</td>
+    </tr>
+    <tr>
+      <td>type="i"</td>
+      <td>The list items will be numbered with lowercase roman number</td>
+    </tr>
+  </table>
+  <ol type="i" start="5">
+    <li>By default, an ordered list will start counting from 1. If you want to start counting from a specified number,
+      you can use the start attribute.</li>
+    </ol>
+    <br>
+    <p><strong>Example:</strong></p>
+    <ul type="none">
+      <li>&lt ol start="10" &gt</li>
+      <li>&ltli&gt Coffee &lt/li&gt</li>
+      <li>&ltli&gt Tea &lt/li&gt</li>
+      <li>&ltli&gt Milk &lt/li&gt</li>
+      <li>&lt/ol&gt</li>
+    </ul>
+   
+  </div> 
+    <div id="question4b">
+      <h3><mark> 2.Unordered List:</mark></h3>
+    <ol type="i">
+      <li>The HTML &ltul&gt tag defines an unordered (bulleted) list.</li>
+      <li>An unordered list starts with the &ltul&gt tag. Each list item starts with the &ltli&gt tag.</li>
+      <li>The list items will be marked with bullets (small black circles) by default.</li>
+      <li>The CSS list-style-type property is used to define the style of the list item marker. It can have one of the
+        following values.</li>
+      </ol>
+      <table border="1px" align="center">
+        <tr>
+          <td>Disc</td>
+          <td>Sets the list item marker to a bullet (default)</td>
+        </tr>
+        <tr>
+          <td>circle</td>
+          <td>Sets the list item marker to a circle</td>
+        </tr>
+        <tr>
+          <td>square</td>
+          <td> Sets the list item marker to a square</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>The list items will not be marked</td>
+        </tr>
+      </table>
+      
+      <p><strong>Example:</strong></p>
+      <ul type="none">
+        <li>&ltul style="list-style-type:disc;"&gt</li>
+        <li>&ltli&gt Coffee &lt/li&gt</li>
+        <li>&ltli&gt Tea &lt/li&gt</li>
+        <li>&ltli&gt Milk &lt/li&gt</li>
+        <li>&lt/ul&gt</li>
+      </ul>
+    
+    </div>  
+
+    <div id="question4c">
+      
+      <h3><mark> 3.Description List:</mark></h3>
+      <ol type="i">
+        <li>A description list is a list of terms, with a description of each term.</li>
+        <li>The &ltdl&gt tag defines the description list, the &ltdt&gt tag defines the term (name), and the &ltdd&gt tag
+          describes each term.</li>
+          <li>Use the HTML &ltdl&gt element to define a description list.</li>
+          <li>Use the HTML &ltdt&gt element to define the description term.</li>
+          <li>Use the HTML &ltdd&gt element to describe the term in a description list.</li>
+        </ol>
+        <p><strong>Example:</strong></p>
+        <ul type="none">
+          <li>&ltdl&gt</li>
+          <li>&ltdt&gt Coffee &lt/dt&gt</li>
+          <li>&ltdd&gt black hot drink &lt/dd&gt</li>
+          <li>&ltdt&gt Milk &lt/dt&gt</li>
+          <li>&ltdd&gt white cold drink &lt/dd&gt</li>
+          <li>&lt/dl&gt</li>
+        </ul>
+    </div>
+        <div id="question4d">
+          <h3><mark>4.Nested List:</mark></h3>
+        <p><strong>Example:</strong></p>
+        <ul type="none">
+          <li>Using the Html5, produce the nested list exactly as illustrated in figure. It includes header, ordered,
+            unordered
+            and definition nested lists.</li>
+          </ul>
+          <div>
+            <h1>List Example</h1>
+            <ol>
+              <li type="I">
+                List Item 1
+                <ol type="a">
+                  <li>Nested item 1.1
+                    <li>Nested item 1.2
+                    </li>
+                  </ol>
+                  <li type="I">List Item 2
+        <ol>
+          <li>Nested item 2.1
+            <li>Nested item 2.2
+            <ul type="circle">
+              <li>Nested items 2.2.1</li>
+              <li>Nested items 2.2.2
+                <ul type="disc">
+                  <li>Nested items 2.2.2.1</li>
+                  <li>Nested items 2.2.2.2</li>
+                </ul>
+              </li>
+              <li>Nested items 2.2.3</li>
+            </ul>
+          </li>
+          <li type="1">Nested item 2.3</li>
+        </ol>
+      </li>
+      <li type="I">List Item 3
+        <ul type="disc">
+          <li>Nested item 3.1</li>
+          <li>Nested item 3.2</li>
+          <li>Nested item 3.3</li>
+        </ul>
+      </li>
+    </ol>
+        </div>
+  </div>
+  
+</div>
+
+
+<div id="html_tables">
+  
+  <h3 id="">HTML Tables</h3>
+  <ol type="i">
+    <li>HTML tables allow web developers to arrange data into rows and columns.</li>
+    <li>&lttable&gt&lt/table&gt tag is used to defines a table in html.</li>
+    <li>Each table row starts with a &lttr&gt and ends with a &lt/tr&gt tag.</li>
+    <li>The &ltth&gt tag defines a header cell in an HTML table.</li>
+    <li>The &lttd&gt tag defines a standard data cell in an HTML table.</li>
+    <li>In HTML tables are created in row by row.</li>
+  </ol>
+  <p><strong>Example:</strong></p>
+  <table border="1px">
+    <tr>
+      <th>1 header</th>
+      <th>1 header</th>
+      <th>1 header</th>
+    </tr>
+    <tr>
+      <td>1 data</td>
+      <td>1 data</td>
+      <td>1 data</td>
+    </tr>
+    <tr>
+      <td>2 data</td>
+      <td>2 data</td>
+      <td>2 data</td>
+    </tr>
+    <tr>
+      <td>3 data</td>
+      <td>3 data</td>
+      <td>3 data</td>
+    </tr>
+  </table>
+  <ol type="i" start="7">
+    <li>The &ltthead&gt tag is used to group header content in an HTML table.</li>
+    <li>The &lttbody&gt tag is used to group the body content in an HTML table.</li>
+    <li>The&lttfoot&gt tag is used to group footer content in an HTML table.</li>
+    <li>The &ltcaption&gt tag defines a table caption.</li>
+    <li>The &ltcaption&gt tag must be inserted immediately after the &lttable&gt tag.</li>
+  </ol>
+  <ol type="i" start="12">
+    <li>To make a cell span over multiple columns, use the colspan attribute.</li>
+    <li>To make a cell span over multiple rows, use the rowspan attribute.</li>
+  </ol>
+  <ol type="i" start="14">
+    <li>The &ltcolgroup&gt tag specifies a group of one or more columns in a table for formatting.</li>
+    <li>The &ltcolgroup&gt tag is useful for applying styles to entire columns, instead of repeating the
+      styles for each cell, for each row.</li>
+      <li>The &ltcol&gt tag specifies column properties for each column within a &ltcolgroup&gt element.</li>
+      <li>The &ltcol&gt tag is useful for applying styles to entire columns, instead of repeating the
+        styles for each cell, for each row.</li>
+      </ol>
+      <div id="question5a">
+        <h2>Attributes in col tag:</h2>
+      <table style="column-gap: 20px;">
+        <tr>
+          <td>span</td>
+          <td>number</td>
+          <td>Specifies the number of columns a &ltcol&gt element should span</td>
+        </tr>
+      </table>
+      </div>
+      
+    </div>
+    
+    
+  <div id="anchor_tag">
+
+    <div id="question6a">
+        <h3>HTML &lta&gt&lt/a&gt (anchor) tag:</h3>
+      <ol type="i">
+        <li>The &lta&gt tag defines a hyperlink, which is used to link from one page to another.</li>
+        <li>The most important attribute of the &lta&gt element is the <mark>href attribute</mark>, which indicates the
+          link's destination.</li>
+          <li>By default, links will appear as follows in all browsers:
+            <ul>
+              <li>An unvisited link is underlined and blue</li>
+              <li>A visited link is underlined and purple</li>
+              <li>An active link is underlined and red</li>
+            </ul>
+          </li>
+        </ol>
+  <p><mark style="background-color:red">NOTE:</mark> If the <a> tag has no href attribute, it is only a placeholder for
+    a hyperlink.</p>
+    <h2>Attributes for a tag:</h2>
+    <ol type="i">
+      <li>href</li>
+      <li>target</li>
+      <li>download</li>
+    </ol>
+    </div>
+    <div id="question6b">
+      <h3>i. href Attribute</h3>
+    <ul>
+      <li>The href attribute specifies the URL of the page the link goes to.
+      </li>
+      <li>If the href attribute is not present, the &lta&gt tag will not be a hyperlink.
+      </li>
+    </ul>
+    
+    <h3><u>Syntax</u></h3>
+    <ul type="disc">
+      <li>&lta&gt href="URL"&gt&lt/a&gt</li>
+    </ul>
+    <h3><u>Example</u></h3>
+    <ul type="disc">
+      <li>&lta href="https://www.google.com"&gtVisit Google&lt/a&gt</li>
+    </ul>
+    </div>
+    <div id="question6c">
+      <h3>ii. target Attribute</h3>
+    <p>The target attribute specifies where to open the linked document.</p>
+    <table border="2px solid">
+      <tr>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>_blank</td>
+        <td>Opens the linked document in a new window or tab</td>
+      </tr>
+      <tr>
+        <td>_self</td>
+        <td>Opens the linked document in the same frame as it was clicked (this is default)</td>
+      </tr>
+      <tr>
+        <td>_parent</td>
+        <td>Opens the linked document in the parent frame</td>
+      </tr>
+      <tr>
+        <td>_top</td>
+        <td>Opens the linked document in the full body of the window</td>
+      </tr>
+    </table>
+    </div>
+    <div id="question6d">
+      <h3>iii. download Attribute</h3>
+    <ul>
+    <li>The download attribute specifies that the target (the file specified in the href attribute) will be downloaded
+      when a user clicks on the hyperlink.</li>
+      <li>The optional value of the download attribute will be the new name of the file after it is downloaded. There are
+        no restrictions on allowed values, and the browser will automatically detect the correct file extension and add it
+        to the file (.img, .pdf, .txt, .html, etc.).</li>
+        <li>If the value is omitted, the original filename is used.</li>
+      </ul>
+      <h3><u>Examples:</u></h3>
+      <ul type="disc">
+        <li>&lta href="/images/schoolimage.jpg" download&gtclick&lt/a&gt.</li>
+        <li>&lta href="/images/schoolimage.jpg" download="old_picture"&gtclick here&lt/a&gt.</li>
+        <li>&lta href="#top"&gt&lt/a&gt it helps to move the top section of the web page.</li>
+      </ul>
+    </div>
+
+  </div>
+  
+    
+  <div class="media_tags">
+      
+      <div id="question7a"><h3>HTML &ltimg&gt Tag: -</h3>
+        <ul type="disc">
+          <li>The &ltimg&gt tag is used to embed an image in an HTML page.</li>
+          <li>Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a
+            holding space for the referenced image.</li>
+            <li>The &ltimg&gt tag has two required attributes:
+              <ul>
+                <li>src - Specifies the path to the image</li>
+                <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+              </ul>
+            </li>
+            <li type="none"><b>Note:</b> Also, always specify the width and height of an image. If width and height are not
+              specified, the page might
+              flicker while the image loads.</li>
+            </ul>
+      </div>
+      <div id="question7b">
+        <h3>HTML &ltaudio&gt Tag:</h3>
+      <ul type="disc">
+<li>The &ltaudio&gt tag is used to embed sound content in a document, such as music or other audio streams.</li>
+<li>The text between the &ltaudio&gt and &lt/audio&gt tags will only be displayed in browsers that do not support the &ltaudio&gt element.</li>
+<li>There are three supported audio formats in HTML: MP3, WAV, and OGG.</li>
+</ul>
+<table border="2px solid">
+<tr>
+  <th>Attribute</th>
+  <th>Value</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>autoplay</td>
+  <td>autoplay</td>
+  <td>Specifies that the audio will start playing as soon as it is ready</td>
+</tr>
+<tr>
+  <td>controls</td>
+  <td>controls</td>
+  <td>Specifies that audio controls should be displayed (such as a play/pause button)</td>
+</tr>
+<tr>
+  <td>loop</td>
+  <td>loop</td>
+  <td>Specifies that the audio will start over again, every time it is finished</td>
+</tr>
+<tr>
+  <td>muted</td>
+  <td>muted</td>
+  <td>Specifies that the audio output should be muted</td>
+</tr>
+</table>
+      </div>
+      <div id="question7c">
+        <h3>HTML &ltvideo&gt Tag:</h3>
+      <ul>
+        <li>Same as &ltaudio&gt tag</li>
+      </ul>
+      
+      </div>
+      <div id="question7d">
+        <h3>The &ltfigure&gt tag:</h3>
+      <ul type="disc">
+        <li>The &ltfigure&gt tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+        </li>
+      </ul>
+      
+      </div>
+      <div id="question7e">
+        <h3>The &ltfigcaption&gt tag:</h3>
+      <ol type="i">
+        <li>The &ltfigcaption&gt tag defines a caption for a &ltfigure&gt element.</li>
+        <li>The &ltfigcaption&gt element can be placed as the first or last child of the &ltfigure&gt element.</li>
+      </ol>
+      
+      </div>
+      <div id="question7f">
+        <h3>The &ltdetails&gt tag:</h3>
+      <ol type="i">
+        <li>The &ltdetails&gt tag specifies additional details that the user can open and close on demand.</li>
+        <li>The &ltdetails&gt tag is often used to create an interactive widget that the user can open and close. By
+          default,
+          the widget is closed. When open, it expands, and displays the content within.</li>
+        </ol>
+        
+      
+      </div>
+      <div id="question7g">
+        <h3>The &ltsummary&gt tag:</h3>
+        <ol type="i">
+          <li>The &ltsummary&gt tag defines a visible heading for the &ltdetails&gt element. The heading can be clicked to
+            view/hide the details.</li>
+            <li type="none">Note: The &ltsummary&gt element should be the first child element of the &ltdetails&gt element.</li>
+          </ol>
+      
+      </div>    
+      
+
+  </div>
+    
+    
+    
+    <div id="html_form">
+      <h3>The &ltform&gt tag :</h3>
+      <ol type="i">
+        <li>The &ltform&gt tag is used to create an HTML form for user input.</li>
+      </ol>
+      
+      <div id="question8a">
+        <h3>The &ltinput&gt tag:</h3>
+      <ol type="i">
+        <li>The &ltinput&gt tag specifies an input field where the user can enter data.</li>
+        <li>The &ltinput&gt element is the most important form element.</li>
+        <li>The &ltinput&gt element can be displayed in several ways, depending on the type attribute.</li>
+      </div>
+
+      <div id="question8b">
+        <h3>The different input types are as follows:</h3>
+      <ol type="i">
+        <li>&ltinput type="text"&gt (default value)
+        </li>
+        <li>&ltinput type="email"&gt
+        </li>
+        <li>&ltinput type="number"&gt
+        </li>
+        <li>&ltinput type="password"&gt
+        </li>
+        <li>&ltinput type="tel"&gt
+        </li>
+        <li>&ltinput type="date"&gt
+        </li>
+        <li>&ltinput type="checkbox"&gt
+        </li>
+        <li>&ltinput type="radio"&gt
+        </li>
+        <li>&ltinput type="range"&gt
+        </li>
+        <li>&ltinput type="submit"&gt
+        </li>
+        <li>&ltinput type="search"&gt
+        </li>
+        <li>&ltinput type="reset"&gt
+        </li>
+        <li>&ltinput type="url"&gt
+        </li>
+        <li>&ltinput type="button"&gt
+        </li>
+      </ol>
+    </ol>
+      </div>
+    </div>
+
+
+    
+    <h3>HTML tags are classified into two types.</h3>
+    <ol type="i">
+      <li>Semantic</li>
+      <li>Non-Semantic</li>
+    </ol>
+    
+    
+    <div id="semantic_tags">
+      
+      <h2>Semantic Elements:</h2>
+      <p>Semantic elements have meaningful names that tell about the type of content. For example header, footer, table, …
+        etc.
+        HTML5 introduces many semantic elements as mentioned below which make the code easier to write and understand for
+        the
+        developer as well as instruct the browser on how to treat them.</p>
+        
+        <ol type="i">
+          <li>&ltarticle&gt It contains independent content which doesn't require any other context blog Post, Newspaper
+            Article, etc.
+          </li>
+          <li>&ltaside&gt It is used to place content in a sidebar i.e. aside from the existing content. It is related to
+            surrounding content.
+          </li>
+          <li>&ltdetails&gt “details” defines additional details that the user can hide or view. “summary” defines a visible
+            heading for a “details” element.
+          </li>
+          <li>&ltfigcaption&gt These are used to add an image to a web page with a small description.
+          </li>
+          <li>&ltfigure&gt These are used to add an image to a web page with a small description.
+          </li>
+          <li>&ltfooter&gt Footer located at the bottom of any article or document, they can contain contact details,
+            copyright information etc. There can be multiple footers on a page.
+          </li>
+          <li>&ltheader&gt As the name suggests, it is for the header of a section introductory of a page. There can be
+            multiple headers on a page.</li>
+            <li>&ltmain&gt It defines the main content of the document. The content inside the main tag should be unique.
+            </li>
+            <li>&ltnav&gt It is used to define a set of navigation links in the form of a navigation bar or nav menu.
+            </li>
+            <li>&ltsection&gt A page can be split into sections like Introduction, Contact Information, Details, etc and each of
+              these sections can be in a different section tag.
+            </li>
+          </ol>
+
+        </div>
+        
+        
+        <div id="nonsemantic_tags">
+          <h2>Non-Semantic Elements:</h2>
+          <ul type="none">
+            <li>Tags like div, and span fall under the Non-Semantic categories as their names don't tell anything about what
+              kind of content is present inside them.</li>
+            </ul>
+          </div>
+          
+          <div id="summary">
+            <h2>HTML Tags: -</h2>
+            <table border="1" align="center">
+              <tr>
+                <th>Tag</th>
+                <th>Tag Name</th>
+                <th>Definition</th>
+              </tr>
+    <tr>
+      <td>&lt!DOCTYPE&gt </td>
+      <td>Doctype tag</td>
+      <td>Defines the document type</td>
+    </tr>
+    <tr>
+      <td>&lta&gt </td>
+      <td>Anchor tag</td>
+      <td>Defines a hyperlink</td>
+    </tr>
+    <tr>
+      <td>&ltabbr&gt </td>
+      <td>Abbreviation tag</td>
+      <td>Defines an abbreviation or an acronym</td>
+    </tr>
+    <tr>
+      <td>&ltaddress&gt </td>
+      <td>Address tag</td>
+      <td>Defines contact information for the author/owner of a document</td>
+    </tr>
+    <tr>
+      <td>&ltarea&gt </td>
+      <td>Area tag</td>
+      <td>Defines an area inside an image map</td>
+    </tr>
+    <tr>
+      <td>&ltarticle&gt </td>
+      <td>Article tag</td>
+      <td>Defines an article</td>
+    </tr>
+    <tr>
+      <td>&ltaside&gt </td>
+      <td>Aside tag</td>
+      <td>Defines content aside from the page content</td>
+    </tr>
+    <tr>
+      <td>&ltaudio&gt </td>
+      <td>Audio tag</td>
+      <td>Defines embedded sound content</td>
+    </tr>
+    <tr>
+      <td>&ltb&gt </td>
+      <td>Bold tag</td>
+      <td>Defines bold text</td>
+    </tr>
+    <tr>
+      <td>&ltbase&gt </td>
+      <td>Base tag</td>
+      <td>Specifies the base URL/target for all relative URLs in a document</td>
+    </tr>
+    <tr>
+      <td>&ltbdi&gt </td>
+      <td>Bdi tag</td>
+      <td>Isolates a part of text that might be formatted in a different direction from other text outside it</td>
+    </tr>
+    <tr>
+      <td>&ltbdo&gt </td>
+      <td>Bdo tag</td>
+      <td>Overrides the current text direction</td>
+    </tr>
+    <tr>
+      <td>&ltbody&gt </td>
+      <td>Body tag</td>
+      <td>Defines the document's body</td>
+    </tr>
+    <tr>
+      <td>&ltbr&gt </td>
+      <td>Break tag</td>
+      <td>Defines a single line break</td>
+    </tr>
+    <tr>
+      <td>&ltbutton&gt </td>
+      <td>Button tag</td>
+      <td>Defines a clickable button</td>
+    </tr>
+    <tr>
+      <td>&ltcanvas&gt </td>
+      <td>Canvas tag</td>
+      <td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+    </tr>
+    <tr>
+      <td>&ltcaption&gt </td>
+      <td>Caption tag</td>
+      <td>Defines a table caption</td>
+    </tr>
+    <tr>
+      <td>&ltcode&gt </td>
+      <td>Code tag</td>
+      <td>Defines a piece of computer code</td>
+    </tr>
+    <tr>
+      <td>&ltcol&gt </td>
+      <td>Col tag</td>
+      <td>Specifies column properties for each column within a &ltcolgroup&gt element </td>
+    </tr>
+    <tr>
+      <td>&ltcolgroup&gt </td>
+      <td>Colgroup tag</td>
+      <td>Specifies a group of one or more columns in a table for formatting</td>
+    </tr>
+    <tr>
+      <td>&ltdata&gt </td>
+      <td>Data tag</td>
+      <td>Adds a machine-readable translation of a given content</td>
+    </tr>
+    <tr>
+      <td>&ltdatalist&gt </td>
+      <td>Datalist tag</td>
+      <td>Specifies a list of pre-defined options for input controls</td>
+    </tr>
+    <tr>
+      <td>&ltdel&gt</td>
+      <td>Delete tag</td>
+      <td>Defines text that has been deleted from a document</td>
+    </tr>
+    <tr>
+      <td>&ltdetils&gt</td>
+      <td>Details tag</td>
+      <td>Defines additional details that the user can view or hide</td>
+    </tr><tr>
+      <td>&ltdfn&gt</td>
+      <td>Define tag</td>
+      <td>Specifies a term that is going to be defined within the content</td>
+    </tr>
+    <tr>
+      <td>&ltdialog&gt</td>
+      <td>Dialog tag</td>
+      <td>Defines a dialog box or window</td>
+    </tr>
+    <tr>
+      <td>&ltdiv&gt</td>
+      <td>Div tag</td>
+      <td>Defines a section in a document</td>
+    </tr>
+    <tr>
+      <td>&ltdl&gt</td>
+      <td>Description list tag</td>
+      <td>Defines a description list</td>
+    </tr>
+    <tr>
+      <td>&ltdt&gt</td>
+      <td>Data term tag</td>
+      <td>Defines a term/name in a description list</td>
+    </tr>
+    <tr>
+      <td>&ltdd&gt</td>
+      <td>Data Definition tag</td>
+      <td>Defines a description/value of a term in a description list</td>
+    </tr>
+    <tr>
+      <td>&ltem&gt</td>
+      <td>Emphasized tag</td>
+      <td>Defines emphasized text </td>
+    </tr>
+    <tr>
+      <td>&ltfieldset&gt</td>
+      <td>Fieldset tag</td>
+      <td>Groups related elements in a form</td>
+    </tr>
+    <tr>
+      <td>&ltfigcaption&gt</td>
+      <td>Figure Caption tag</td>
+      <td>Defines a caption for a figure element</td>
+    </tr>
+    <tr>
+      <td>&ltfig&gt</td>
+      <td>Figure tag</td>
+      <td>Specifies self-contained content</td>
+    </tr>
+    <tr>
+      <td>&ltfooter&gt</td>
+      <td>Footer tag</td>
+      <td>Defines a footer for a document or section</td>
+    </tr>
+    <tr>
+      <td>&ltform&gt</td>
+      <td>Form tag</td>
+      <td>Defines an HTML form for user input</td>
+    </tr>
+    <tr>
+      <td>&lth1&gt to &lth6&gt</td>
+      <td>Heading tags</td>
+      <td>Defines HTML headings</td>
+    </tr>
+    <tr>
+      <td>&lthead&gt</td>
+      <td>Head tag</td>
+      <td>Contains metadata/information for the document</td>
+    </tr>
+    <tr>
+      <td>&ltheader&gt</td>
+      <td>Header tag</td>
+      <td>Defines a header for a document or section</td>
+    </tr>
+    <tr>
+      <td>&lthgroup&gt</td>
+      <td>Header Group tag</td>
+      <td>Defines a header and related content</td>
+    </tr>
+    <tr>
+      <td>&lthr&gt</td>
+      <td>Horizontal Line tag</td>
+      <td>Defines a Horizontal Line</td>
+    </tr>
+    <tr>
+      <td>&lthtml&gt</td>
+      <td>html tag</td>
+      <td>Defines the root of an HTML document</td>
+    </tr>
+    <tr>
+      <td>&lti&gt</td>
+      <td>Italics tag</td>
+      <td>Defines a part of text in an alternate voice or mood</td>
+    </tr>
+    <tr>
+      <td>&ltiframe&gt</td>
+      <td>inline frame tag</td>
+      <td>Defines an inline frame</td>
+    </tr>
+    <tr>
+      <td>&ltimg&gt</td>
+      <td>image tag</td>
+      <td>Defines an image</td>
+    </tr>
+    <tr>
+      <td>&ltinput&gt</td>
+      <td>input tag</td>
+      <td>Defines an input control</td>
+    </tr>
+    <tr>
+      <td>&ltins&gt</td>
+      <td>inserted tag</td>
+      <td>Defines a text that has been inserted into a document</td>
+    </tr>
+    <tr>
+      <td>&ltkbd&gt</td>
+      <td>keyboard tag</td>
+      <td>Defines keyboard input</td>
+    </tr>
+    <tr>
+      <td>&ltlabel&gt</td>
+      <td>label tag</td>
+      <td>Defines a label for an &ltinput&gt element</td>
+    </tr>
+    <tr>
+      <td>&ltlegend&gt</td>
+      <td>legend tag</td>
+      <td>Defines a caption for a &ltfieldset&gt element</td>
+    </tr>
+    <tr>
+      <td>&ltli&gt</td>
+      <td>list tag</td>
+      <td>Defines a list item</td>
+    </tr>
+    <tr>
+      <td>&ltlink&gt</td>
+      <td>link tag</td>
+      <td>Defines the relationship between a document and an external resource (most used to link to style sheets)</td>
+    </tr>
+    <tr>
+      <td>&ltmain&gt</td>
+      <td>main tag</td>
+      <td>Specifies the main content of a document</td>
+    </tr>
+    <tr>
+      <td>&ltmap&gt</td>
+      <td>map tag</td>
+      <td>Defines an image map</td>
+    </tr><tr>
+      <td>&ltmark&gt</td>
+      <td>mark tag</td>
+      <td>Defines marked/highlighted text</td>
+    </tr>
+    <tr>
+      <td>&ltmenu&gt</td>
+      <td>menu tag</td>
+      <td>Defines an unordered list</td>
+    </tr>
+    <tr>
+      <td>&ltmeta&gt</td>
+      <td>meta tag</td>
+      <td>Defines metadata about an HTML document</td>
+    </tr>
+    <tr>
+      <td>&ltmeter&gt</td>
+      <td>meter tag</td>
+      <td>Defines a scalar measurement within a known range (a gauge)</td>
+    </tr>
+    <tr>
+      <td>&ltnav&gt</td>
+      <td>navigation tag</td>
+      <td>Defines navigation links</td>
+    </tr>
+    <tr>
+      <td>&ltnoframes&gt</td>
+      <td>no frame tag</td>
+      <td>Defines an alternate content for users that do not support frames</td>
+    </tr>
+    <tr>
+      <td>&ltnoscript&gt</td>
+      <td>noscript tag</td>
+      <td>Defines an alternate content for users that do not support client-side scripts</td>
+    </tr>
+    <tr>
+      <td>&ltobject&gt</td>
+      <td>object tag</td>
+      <td>Defines a container for an external application</td>
+    </tr>
+    <tr>
+      <td>&ltol&gt</td>
+      <td>ol tag</td>
+      <td>Defines an ordered list</td>
+    </tr>
+    <tr>
+      <td>&ltoptgroup&gt</td>
+      <td>option group tag</td>
+      <td>Defines a group of related options in a drop-down list</td>
+    </tr>
+    <tr>
+      <td>&ltoption&gt</td>
+      <td>option tag</td>
+      <td>Defines an option in a drop-down list</td>
+    </tr>
+    <tr>
+      <td>&ltoutpu&gt</td>
+      <td>output tag</td>
+      <td>Defines the result of a calculation</td>
+    </tr>
+    <tr>
+      <td>&ltp&gt</td>
+      <td>paragraph tag</td>
+      <td>Defines a paragraph</td>
+    </tr>
+    <tr>
+      <td>&ltparam&gt</td>
+      <td>parameter tag</td>
+      <td>Defines a parameter for an object</td>
+    </tr>
+    
+    <tr>
+      <td>&ltpicture&gt</td>
+      <td>picture tag</td>
+      <td>Defines a container for multiple image resources</td>
+    </tr>
+    <tr>
+      <td>&ltpre&gt</td>
+      <td>pre tag</td>
+      <td>Defines preformatted text</td>
+    </tr>
+    <tr>
+      <td>&ltprogress&gt</td>
+      <td>progress tag</td>
+      <td>Represents the progress of a task</td>
+    </tr>
+    <tr>
+      <td>&ltq&gt</td>
+      <td>quotation tag</td>
+      <td>Defines a short quotation</td>
+    </tr>
+    <tr>
+      <td>&ltrp&gt</td>
+      <td>ruby text tag</td>
+      <td>Defines what to show in browsers that do not support ruby annotations</td>
+    </tr>
+    
+    <tr>
+      <td>&ltrt&gt</td>
+      <td>ruby annotation tag</td>
+      <td>Defines an explanation/pronunciation of characters (for East Asian typography)</td>
+    </tr>
+    <tr>
+      <td>&ltruby&gt</td>
+      <td>ruby tag</td>
+      <td>Defines a ruby annotation (for East Asian typography)</td>
+    </tr>
+    <tr>
+      <td>&lts&gt</td>
+      <td>s tag</td>
+      <td>Defines text that is no longer correct</td>
+    </tr>
+    <tr>
+      <td>&ltsamp&gt</td>
+      <td>sample tag</td>
+      <td>Defines sample output from a computer program</td>
+    </tr>
+    <tr>
+      <td>&ltscript&gt</td>
+      <td>script tag</td>
+      <td>Defines a client-side script</td>
+    </tr>
+    
+    <tr>
+      <td>&ltsearch&gt</td>
+      <td>search tag</td>
+      <td>Defines a search section</td>
+    </tr>
+    <tr>
+      <td>&ltsection&gt</td>
+      <td>section tag</td>
+      <td>Defines a section in a document</td>
+    </tr>
+    <tr>
+      <td>&ltselect&gt</td>
+      <td>select tag</td>
+      <td>Defines a drop-down list</td>
+    </tr>
+    <tr>
+      <td>&ltsmall&gt</td>
+      <td>small tag</td>
+      <td>Defines smaller text</td>
+    </tr>
+    <tr>
+      <td>&ltsource&gt</td>
+      <td>source tag</td>
+      <td>Defines multiple media resources for media elements (&ltvideo&gt and &ltaudio&gt)</td>
+    </tr>
+    <tr>
+      <td>&ltspan&gt</td>
+      <td>span tag</td>
+      <td>Defines a section in a document</td>
+    </tr>
+    <tr>
+      <td>&ltstrike&gt</td>
+      <td>strike tag</td>
+      <td>Defines strikethrough text</td>
+    </tr>
+    <tr>
+      <td>&ltstrong&gt</td>
+      <td>strong tag</td>
+      <td>Defines important text</td>
+    </tr>
+    <tr>
+      <td>&ltstyle&gt</td>
+      <td>style tag</td>
+      <td>Defines style information for a document</td>
+    </tr>
+    <tr>
+      <td>&ltsub&gt</td>
+      <td>sub tag</td>
+      <td>Defines subscripted text</td>
+    </tr>
+    <tr>
+      <td>&ltsummary&gt</td>
+      <td>summary tag</td>
+      <td>Defines a visible heading for a &ltdetails&gt element</td>
+    </tr>
+    <tr>
+      <td>&ltsup&gt</td>
+      <td>sup</td>
+      <td>Defines superscripted text</td>
+    </tr>
+    <tr>
+      <td>&ltsvg&gt</td>
+      <td>svg tag</td>
+      <td>Defines a container for SVG graphics</td>
+    </tr>
+    <tr>
+      <td>&lttable&gt</td>
+      <td>yable tag</td>
+      <td>Defines a table</td>
+    </tr>
+    <tr>
+      <td>&lttbody&gt</td>
+      <td>table body tag</td>
+      <td>Groups the body content in a table</td>
+    </tr>
+    <tr>
+      <td>&lttd&gt</td>
+      <td>table data</td>
+      <td>Defines a cell in a table</td>
+    </tr>
+    <tr>
+      <td>&lttemplate&gt</td>
+      <td>template tag</td>
+      <td>Defines a container for content that should be hidden when the page loads</td>
+    </tr>
+    <tr>
+      <td>&lttextarea&gt</td>
+      <td>text area tag</td>
+      <td>Defines a multiline input control (text area)</td>
+    </tr>
+    <tr>
+      <td>&lttfoot&gt</td>
+      <td>table footer tag</td>
+      <td>Groups the footer content in a table</td>
+    </tr>
+    <tr>
+      <td>&ltth&gt</td>
+      <td>table header tag</td>
+      <td>Defines a header cell in a table</td>
+    </tr>
+    <tr>
+      <td>&ltthead&gt</td>
+      <td>thead tag</td>
+      <td>Groups the header content in a table</td>
+    </tr>
+    <tr>
+      <td>&lttime&gt</td>
+      <td>time tag</td>
+      <td>Defines a specific time (or datetime)</td>
+    </tr>
+    <tr>
+      <td>&lttitle&gt</td>
+      <td>title tag</td>
+      <td>Defines a title for the document</td>
+    </tr>
+    <tr>
+      <td>&lttr&gt</td>
+      <td>table row tag</td>
+      <td>Defines a row in a table</td>
+    </tr>
+    <tr>
+      <td>&lttrack&gt</td>
+      <td>track tag</td>
+      <td>Defines text tracks for media elements (&ltvideo&gt and &ltaudio&gt)</td>
+    </tr>
+    <tr>
+      <td>&lttt&gt</td>
+      <td>tt tag</td>
+      <td>Not supported in HTML5. Use CSS instead.
+        Defines teletype text</td>
+      </tr>
+      <tr>
+        <td>&ltu&gt</td>
+        <td>u tag</td>
+        <td>Defines some text that is unarticulated and styled differently from normal text</td>
+      </tr>
+      <tr>
+        <td>&ltul&gt</td>
+        <td>ul tag</td>
+        <td>Defines an unordered list</td>
+      </tr>
+      <tr>
+        <td>&ltvar&gt</td>
+        <td>var tag</td>
+        <td>Defines a variable</td>
+      </tr>
+      <tr>
+        <td>&ltvideo&gt</td>
+        <td>video tag</td>
+        <td>Defines embedded video content</td>
+      </tr>
+      <tr>
+        <td>&ltwbr&gt</td>
+        <td>wbr tag</td>
+        <td>Defines a possible line-break</td>
+      </tr>
+      <tr>
+      </table>
+    </div>
+    
+  </div>
+  
+</div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</html>
+
+</body>
+
+</html>
